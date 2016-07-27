@@ -1,4 +1,4 @@
-int b, x, y, g, h, i;
+int b, x, y, g, h, i, j;
 
 PImage fighterImg;
 PImage backgroundFormerImg;
@@ -13,8 +13,9 @@ void setup(){
   x = 0;
   y = 0;
   g = floor(random(200));
-  h = floor(random(640));
-  i = floor(random(480));
+  h = floor(random(600));
+  i = floor(random(400));
+  j = floor(random(400));
  
    
   hpImg = loadImage("img/hp.png");
@@ -48,6 +49,5 @@ void draw(){
   
   x +=3;  // x = x+2;
   x %=640;
-  image(enemyImg,x,100);
-  
+  image(enemyImg,x,j);
 }
