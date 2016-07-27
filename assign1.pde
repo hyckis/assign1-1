@@ -50,4 +50,5 @@ void draw(){
   x +=3;  // x = x+2;
   x %=640;
   image(enemyImg,x,j);
+    
 }
